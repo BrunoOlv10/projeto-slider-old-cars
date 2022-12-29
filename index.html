@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider - MapaDev Week</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/estilos.css" />
+    <link rel="stylesheet" href="src/css/variaveis.css">
+    <link rel="stylesheet" href="src/css/responsivo.css" />
+
+    <link
+      rel="shortcut icon"
+      href="src/imagens/old-car.png"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="src/imagens/old-car.png" alt="old-car" class="logo" />
+      <h1 class="titulo">Old Cars Slider</h1>
+    </header>
+
+    <main class="carro-slider">
+      <button class="btn-seta btn-voltar" id="btn-voltar">
+        <img src="src/imagens/seta.png" alt="seta voltar" />
+      </button>
+
+      <ul class="lista-carros">
+        <li class="cartao selecionado fundo">
+          <div class="informacoes">
+            <h2 class="nome">Dodge Charger</h2>
+            <p class="potencia">HP 375</p>
+          </div>
+
+          <div class="container-imagem">
+            <img
+              src="src/imagens/dodge-charger.png"
+              alt="Dodge Charger"
+              class="imagem-carro"
+            />
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">
+              Com um peso de 1720 kgs, o Charger R/T (XS29) 1969 440 V8 Magnum 4-speed está equipado com um motor V de 8 cilindros atmosférico, a Gasolina, com o código de motor Chrysler RB-series V-8 440 Magnum.
+              Este motor produz uma potência máxima de 380 CV às 4600 rotações e um torque máximo de 654 Nm às 3200 rotações. A potência é transmitida à estrada através de um câmbio Manual de 4 marchas, e o tipo de tração é traseira (RWD). <a class="links" href="https://www.ultimatespecs.com/br/carros-ficha-tecnica/Dodge/132368/Dodge-Charger-R-T-(XS29)-1969-440-V8-Magnum-4-speed.html" target="_blank">Saiba mais</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="cartao fundo">
+          <div class="informacoes">
+            <h2 class="nome">Chevrolet Opala</h2>
+            <p class="potencia">HP 138</p>
+          </div>
+
+          <div class="container-imagem">
+            <img
+              src="src/imagens/chevrolet-opala.png"
+              alt="Chevrolet Opala"
+              class="imagem-carro"
+            />
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">
+              O Opala SS de 1974, entregava 140 cv, utilizando tuchos hidráulicos, com velocidade final real de 174 km/h e aceleração de 0 a 100 em 13,5 segundos, não era o esportivo mais rápido do mercado, ficando atrás da família Dodge Charger e Ford Maverick, mas era, o que entregava a melhor relação força e consumo em baixas e médias rotações, além de ser o modelo de melhor relação custo benefício dentro do segmento. <a class="links" href="https://motortudo.com/opala-ss-6-1974-o-ultimo-ano-da-primeira-geracao-esportiva-de-140-cv-e-tuchos-hidraulicos/" target="_blank">Saiba mais</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="cartao fundo">
+          <div class="informacoes">
+            <h2 class="nome">Tucker Torpedo</h2>
+            <p class="potencia">HP 164</p>
+          </div>
+
+          <div class="container-imagem">
+            <img
+              src="src/imagens/tucker-torpedo.png"
+              alt="Tucker Torpedo"
+              class="imagem-carro"
+            />
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">
+              O Tucker 48 ou Torpedo, é um automóvel de passeio avançado para sua época, projetado pelo empresário estadunidense Preston Tucker e fabricado em Chicago no ano de 1948.
+              Tem uma carroceria sedan de quatro portas, e foram fabricados apenas 51 unidades antes da empresa ser fechada por acusações de fraude. <a class="links" href="https://www.portalsaofrancisco.com.br/automoveis/tucker-torpedo" target="_blank">Saiba mais</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="cartao fundo">
+          <div class="informacoes">
+            <h2 class="nome">Ford Maverick</h2>
+            <p class="potencia">HP 253</p>
+          </div>
+
+          <div class="container-imagem">
+            <img
+              src="src/imagens/ford-maverick.png"
+              alt="Ford Maverick"
+              class="imagem-carro"
+            />
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">
+              A potência de 257 cv, suficientes para o Maverick acelerar de 0 a 100 km/h em 7,8 segundos e alcançar os 200 km/h. Avaliado em julho de 1974, o Maverick Quadrijet exigia habilidade nas arrancadas para evitar que os pneus perdessem tração. A taxa de compressão mais alta exigia o uso de gasolina azul: o consumo variava de 2,2 a 6,5 km/l. <a class="links" href="https://quatrorodas.abril.com.br/carros-classicos/ford-maverick-v8-e-antigo-raro-e-seu-preco-ate-supera-os-r-300-000/" target="_blank">Saiba mais</a>
+            </p>
+          </div>
+        </li>
+
+        <li class="cartao fundo">
+          <div class="informacoes">
+            <h2 class="nome">Chevrolet Chevette</h2>
+            <p class="potencia">HP 67</p>
+          </div>
+
+          <div class="container-imagem">
+            <img
+              src="src/imagens/chevrolet-chevette.png"
+              alt="Chevrolet Chevette"
+              class="imagem-carro"
+            />
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Descrição</h3>
+            <p class="texto">
+              Com média de 73 mil veículos vendidos por ano, o Chevette tinha linhas modernas com motor de 1,4 litro e 68 cv, comando de válvulas no cabeçote e inovadores itens de segurança, como pisca-alerta e coluna de direção não-penetrante. <a class="links" href="https://www.litoralcar.com.br/blog/curiosidades/os-8-carros-classicos-brasileiros-mais-iconicos/" target="_blank">Saiba mais</a>
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <button class="btn-seta" id="btn-avancar">
+        <img src="src/imagens/seta.png" alt="seta avançar" />
+      </button>
+    </main>
+
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
